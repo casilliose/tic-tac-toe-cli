@@ -1,5 +1,5 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory '/home/igor/games/tic-tac-toe-cli'
-g++ main.cpp engine/Games.cpp engine/Menu.cpp -o main
+g++ main.cpp engine/Games.cpp engine/Menu.cpp engine/Render.cpp -o main
 make: Leaving directory '/home/igor/games/tic-tac-toe-cli'
  
