@@ -1,2 +1,2 @@
-all:
-	g++ main.cpp engine/Games.cpp engine/Menu.cpp engine/Render.cpp -o main
+auto:
+	g++ -o main main.cpp

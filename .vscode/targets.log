@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,8 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
- 
-# Make data base, printed on Wed Jun 22 12:17:04 2022
+# Make data base, printed on Fri Jun 24 01:53:26 2022
 
 # Variables
 
@@ -22,7 +23,7 @@ SSH_AGENT_LAUNCHER = gnome-keyring
 # environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ca73f7c0-92e0-4123-a915-343125c24074.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-befd8c66-f215-4ae0-8905-039c7e4e43e8.sock
 # environment
 LC_NAME = en_US.UTF-8
 # environment
@@ -58,7 +59,7 @@ VSCODE_CODE_CACHE_PATH = /home/igor/.config/Code/CachedData/da15b6fd3ef856477bf6
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.3YSKO1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.AGNDO1
 # default
 .LOADED := 
 # default
@@ -70,7 +71,7 @@ CURDIR := /home/igor/games/tic-tac-toe-cli
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -94,13 +95,13 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 25290
+VSCODE_PID = 163423
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/igor:@/tmp/.ICE-unix/3539,unix/igor:/tmp/.ICE-unix/3539
+SESSION_MANAGER = local/igor:@/tmp/.ICE-unix/2466,unix/igor:/tmp/.ICE-unix/2466
 # automatic
 *F = $(notdir $*)
 # environment
@@ -142,7 +143,7 @@ LC_MONETARY = en_US.UTF-8
 # environment
 LC_TIME = en_US.UTF-8
 # environment
-INVOCATION_ID = e72a889aeadd429a9b5171acf590d1c5
+INVOCATION_ID = 6f8efb83fbf44261abd3bd6e35268a46
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -168,9 +169,9 @@ LOGNAME = igor
 # environment
 GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # makefile
-.DEFAULT_GOAL := all
+.DEFAULT_GOAL := auto
 # environment
-SYSTEMD_EXEC_PID = 3557
+SYSTEMD_EXEC_PID = 2484
 # environment
 DISPLAY = :0
 # environment
@@ -180,11 +181,11 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 3241
+MANAGERPID = 2330
 # environment
 LC_MEASUREMENT = en_US.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 25290
+GIO_LAUNCHED_DESKTOP_FILE_PID = 163423
 # environment
 _ = /usr/share/code/code
 # environment
@@ -192,7 +193,7 @@ LC_PAPER = en_US.UTF-8
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-JOURNAL_STREAM = 8:42170
+JOURNAL_STREAM = 8:38078
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -224,18 +225,17 @@ GDMSESSION = ubuntu
 # environment
 LC_IDENTIFICATION = en_US.UTF-8
 # variable set hash-table stats:
-# Load=106/1024=10%, Rehash=0, Collisions=4/139=3%
+# Load=106/1024=10%, Rehash=0, Collisions=4/136=3%
 
- 
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
 
 # Directories
 
-# . (device 66306, inode 148003): 9 files, no impossibilities.
+# . (device 66306, inode 148003): 8 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 8 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -246,7 +246,7 @@ LC_IDENTIFICATION = en_US.UTF-8
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-22 12:17:03.459434289
+#  Last modified 2022-06-24 01:53:23.747192081
 #  File has been updated.
 #  Successfully updated.
 
@@ -256,54 +256,34 @@ Makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
 all:
 #  Command line target.
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
+#  Implicit rule search has been done.
 #  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := all
-# automatic
-# * := 
-# automatic
-# < := 
-# automatic
-# + := 
-# automatic
-# % := 
-# automatic
-# ^ := 
-# automatic
-# ? := 
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
-#  recipe to execute (from 'Makefile', line 2):
-	g++ main.cpp engine/Games.cpp engine/Menu.cpp engine/Render.cpp -o main
+#  File has not been updated.
 
-# Not a target:
-.SUFFIXES:
+auto:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+#  recipe to execute (from 'Makefile', line 2):
+	g++ -o main main.cpp
 
 # files hash-table stats:
-# Load=4/1024=0%, Rehash=0, Collisions=0/16=0%
+# Load=5/1024=0%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 14 / storage = 113 B / avg = 8 B
-# current buf: size = 8162 B / used = 113 B / count = 14 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 14 / storage = 111 B / avg = 7 B
+# current buf: size = 8162 B / used = 111 B / count = 14 / avg = 7 B
 
-# strcache performance: lookups = 21 / hit rate = 33%
+# strcache performance: lookups = 19 / hit rate = 26%
 # hash-table stats:
-# Load=14/8192=0%, Rehash=0, Collisions=0/21=0%
-# Finished Make data base on Wed Jun 22 12:17:04 2022
+# Load=14/8192=0%, Rehash=0, Collisions=0/19=0%
+# Finished Make data base on Fri Jun 24 01:53:26 2022
 
  
